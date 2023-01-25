@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>    
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img src="img/klima-indsats.jpg" alt="logo af klimaindsats"></a>
+            <ul>
+                <li><a href="index.html">Kontakt</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="kontaktform">
+        <h1>kontakt os</h1>
+            <h2>Skriv til os via kontaktformularen nedenunder</h2>
+    <form>
+        <label class="visually-hidden" for="navn">Navn</label> <!--class="visually-hidden" fjerner label for læseren, men ikke for skærmlæseren-->
+        <input placeholder="Navn" id="navn" type="text" required> <!--placeholder sætter et navn i boksen (bliver ikke læst af oplæser. æstetisk)-->
+
+        <label for="adresse">Adresse</label>
+        <input id="adresse" type="text">
+
+        <label for="telefon">Telefonnummer</label>
+        <input id="telefon" type="tel">
+
+        <label for="mail">E-mail</label>
+        <input id="mail" type="email">
+
+        <label for="skildpadde"> Vælg skildpadde</label>
+        <select id="skildpadde" name="select">
+            <option value="0" selected="true" disabled> ... </option>
+            <option value="1" >Kurt</option>
+            <option value="2" >Ole</option>
+            <option value="3" >Jens</option>
+            <option value="4" >Hans</option>
+        </select>
+
+        <fieldset class="checkbox">
+            <legend> Hvilken farve ønsker ud </legend>
+            <div>
+                <input id="gul" name="colors"
+                type="checkbox" value="Gul">
+                    <label for="gul">Gul</label>
+            </div>
+            <div>
+                <input id="grøn" name="colors"
+                type="checkbox" value="grøn">
+                    <label for="grøn">Grøn</label>
+            </div>
+            <div>
+                <input id="rød" name="colors"
+                type="checkbox" value="rød">
+                    <label for="rød">Rød</label>
+            </div>
+
+
+        </fieldset>
+
+        <label for="besked">Besked</label>
+        <textarea id="besked" rows="8" cols="20" ></textarea>
+
+        <input type="submit" name="submit" value="send besked"> <!--knap-->
+
+    </form>  
+    </main>  
+</body>
+</html>
